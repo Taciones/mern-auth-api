@@ -13,6 +13,8 @@ if(process.env.NODE_ENV === 'development') {
         origin: `http://localhost:3000`,
         methods: ['GET', 'POST', 'PUT']    
     }));
+} else{
+    app.use(cors());
 }
 
 //app.use(cors());
